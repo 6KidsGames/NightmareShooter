@@ -21,7 +21,7 @@ The game is based initially on the Survival Shooter tutorial at https://unity3d.
 1. Move to that folder: `cd c:\Nightmare`
 1. Clone the Git repo to your new folder: `git clone https://github.com/6KidsGames/NightmareShooter.git .`
 
-## Every day - syncing code and installing updates
+## Every day - syncing code and running in Unity
 When you're developing code with a team, you're going to need to get their code as well as upload your code. A good time to do this is at the start of each day, unless you're in the middle of something.
 
 1. (If you don't already have a console open) Open a Windows console: Windows+R (to open the Run box), then type `cmd` and press Enter.
@@ -32,7 +32,7 @@ When you're developing code with a team, you're going to need to get their code 
 1. If you have other files changed, get it committed and run `master`, or talk to the teacher.
 1. Pull down the latest code: `pull` (short for `git pull`)
 1. Run Setup.cmd (which installs the latest helper code from the Internet) by entering: `Setup`
-1. Run Visual Studio Code: `code .`
+1. Start the main project in Unity using the `Start` script.
 
 ### Changing the Code
 When you want to make changes that others in your team will get to see, you need to use Git to create
