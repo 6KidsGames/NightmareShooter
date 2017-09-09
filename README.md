@@ -32,7 +32,7 @@ When you're developing code with a team, you're going to need to get their code 
 1. If you have other files changed, get it committed and run `master`, or talk to the teacher.
 1. Pull down the latest code: `pull` (short for `git pull`)
 1. Run Setup.cmd (which installs the latest helper code from the Internet) by entering: `Setup`
-1. Start the main project in Unity using the `Start` script.
+1. Start the main project in Unity using the `RunInUnity` script.
 
 ### Changing the Code
 When you want to make changes that others in your team will get to see, you need to use Git to create
