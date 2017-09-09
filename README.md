@@ -7,13 +7,15 @@
 This repo contains the second large-scale game created by the kid-developers at 6 Kids Games,
 from September, 2017 onward. This time we use Unity Personal Edition for the platform.
 
+The game is based initially on the Survival Shooter tutorial at https://unity3d.com/learn/tutorials/projects/survival-shooter-tutorial .
+
 
 # Using This Repo
 
 ## Getting started - First Time Setup
 
 1. Install Git from https://git-scm.com/download/win (for Windows), or https://git-scm.com/download for other operating systems. You'll need at least version 2.14.1 (which contains a fix for a serious security vulnerability).
-1. Install Unity Personal Edition from https://unity3d.com . This will also install Visual Studio Community Edition.
+1. Install Unity Personal Edition from https://store.unity.com/download?ref=personal . This will also install Visual Studio Community Edition. You will have to create a Unity ID, and answer a questionnaire about how you are going to use Unity (as a student...).
 1. Open a Windows console: Windows+R (to open the Run box), then type `cmd` and press Enter.
 1. Create a new folder: `mkdir c:\Nightmare`
 1. Move to that folder: `cd c:\Nightmare`
