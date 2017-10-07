@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45061475, g: 0.4986083, b: 0.56437457, a: 1}
+  m_IndirectSpecularColor: {r: 0.45061463, g: 0.4986083, b: 0.5643749, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -779,6 +779,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &1390010770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390010762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!114 &1390010771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,6 +846,21 @@ Prefab:
     - target: {fileID: 4838011129601388, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114615528213161760, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 2105635028}
+    - target: {fileID: 114615528213161760, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1863265364}
+    - target: {fileID: 120364993831037880, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: m_UseWorldSpace
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d, type: 2}
@@ -1285,29 +1316,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2008627809 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1071975724884232, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1531107884}
---- !u!114 &2008627810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2008627809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 2105635028}
-  damageImage: {fileID: 1863265364}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1 &2105635026
 GameObject:
   m_ObjectHideFlags: 0
