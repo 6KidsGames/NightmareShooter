@@ -64,7 +64,7 @@ namespace CompleteProject
             }
         }
 
-
+        
         public void DisableEffects ()
         {
             // Disable the line renderer and the light.
@@ -76,6 +76,8 @@ namespace CompleteProject
 
         void Shoot ()
         {
+            gunLine.startWidth = 1000;
+            gunLine.endWidth = 1000;
             // Reset the timer.
             timer = 0f;
 
@@ -91,6 +93,7 @@ namespace CompleteProject
             gunParticles.Play ();
 
             // Enable the line renderer and set it's first position to be the end of the gun.
+            
             gunLine.enabled = true;
             gunLine.SetPosition (0, transform.position);
 
@@ -118,7 +121,7 @@ namespace CompleteProject
             else
             {
                 // ... set the second position of the line renderer to the fullest extent of the gun's range.
-                gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
+                gunLine.SetPosition (10, shootRay.origin + shootRay.direction * range);
             }
         }
     }

@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
-
+    public float maxWidth = 0.5f;
 
     float timer;
     Ray shootRay = new Ray();
@@ -16,8 +16,10 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
-
+    public float chargesec;
+    public float maxChargeSec = 10.0f;
+    Color originalGunLineColor;
+    
     void Awake ()
     {
         shootableMask = LayerMask.GetMask ("Shootable");
@@ -25,11 +27,14 @@ public class PlayerShooting : MonoBehaviour
         gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
+        originalGunLineColor = gunLine.material.color;
     }
 
 
     void Update ()
     {
+        chargesec += Time.deltaTime;
+        chargesec = Mathf.Min(chargesec, maxChargeSec);
         timer += Time.deltaTime;
 
 		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
@@ -64,7 +69,10 @@ public class PlayerShooting : MonoBehaviour
 
         gunLine.enabled = true;
         gunLine.SetPosition (0, transform.position);
-
+        gunLine.startWidth = maxWidth * chargesec / maxChargeSec;
+        gunLine.endWidth = gunLine.startWidth;
+        float redScale = 0.2f + 0.8f * chargesec / maxChargeSec;
+        gunLine.material.color = new Color(originalGunLineColor.r * redScale, gunLine.material.color.g, gunLine.material.color.b, originalGunLineColor.a * chargesec / maxChargeSec);
         shootRay.origin = transform.position;
         shootRay.direction = transform.forward;
 
@@ -73,7 +81,7 @@ public class PlayerShooting : MonoBehaviour
             EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
             if(enemyHealth != null)
             {
-                enemyHealth.TakeDamage (damagePerShot, shootHit.point);
+                enemyHealth.TakeDamage ((int)((float)damagePerShot * chargesec/maxChargeSec), shootHit.point);
             }
             gunLine.SetPosition (1, shootHit.point);
         }
@@ -81,5 +89,7 @@ public class PlayerShooting : MonoBehaviour
         {
             gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
         }
+
+        chargesec = 0;
     }
 }
