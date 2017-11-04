@@ -647,7 +647,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.3
-  m_Speed: 3
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -861,6 +861,26 @@ Prefab:
         type: 2}
       propertyPath: m_UseWorldSpace
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: damagePerShot
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: timeBetweenBullets
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: range
+      value: 1000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214945786996098, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: speed
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d, type: 2}
