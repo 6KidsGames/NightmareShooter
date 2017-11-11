@@ -8,21 +8,20 @@ public class EnemyHealth : MonoBehaviour
     public int scoreValue = 10;
     public AudioClip deathClip;
 
-
     Animator anim;
     AudioSource enemyAudio;
     ParticleSystem hitParticles;
     CapsuleCollider capsuleCollider;
     bool isDead;
     bool isSinking;
-
-
-    void Awake ()
+    
+    void Awake()
     {
-        anim = GetComponent <Animator> ();
-        enemyAudio = GetComponent <AudioSource> ();
-        hitParticles = GetComponentInChildren <ParticleSystem> ();
-        capsuleCollider = GetComponent <CapsuleCollider> ();
+        anim = GetComponent <Animator>();
+        enemyAudio = GetComponent<AudioSource>();
+        hitParticles = GetComponentInChildren <ParticleSystem>();
+        capsuleCollider = GetComponent <CapsuleCollider>();
+        deathClip = GetComponent<AudioClip>();
 
         currentHealth = startingHealth;
     }
@@ -37,35 +36,36 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void TakeDamage (int amount, Vector3 hitPoint)
+    public void TakeDamage(int amount, Vector3 hitPoint)
     {
-        if(isDead)
+        if (isDead)
+        {
             return;
+        }
 
-        enemyAudio.Play ();
+        enemyAudio.Play();
 
         currentHealth -= amount;
             
         hitParticles.transform.position = hitPoint;
         hitParticles.Play();
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
-            Death ();
+            Death();
         }
     }
 
-
-    void Death ()
+    void Death()
     {
         isDead = true;
 
         capsuleCollider.isTrigger = true;
 
-        anim.SetTrigger ("Dead");
+        anim.SetTrigger("Dead");
 
         enemyAudio.clip = deathClip;
-        enemyAudio.Play ();
+        enemyAudio.Play();
     }
 
 
