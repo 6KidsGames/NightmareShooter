@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4988607917113874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftUpperArmIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4350740694649314}
   - component: {fileID: 199372026375574214}
   - component: {fileID: 198336243824766362}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ctrl_Grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4235727104858738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightWristIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4627045848996810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEarEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4378286287943924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeadEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4290701479614788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLowerArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4880140909723448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftUpperArmFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4068119980649778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftUpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4672414634911368}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightUpperArmFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4968676061188542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftWristFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4063502102632764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightLowerArmFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4255958011851502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4332986223526650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightFootEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4831027044727070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLowerArmFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4704387132592842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEarEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4995406595770550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightUpperArmIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4668038104065970}
   - component: {fileID: 137943465167933022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zombear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4104817369031094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightUpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4818157926643578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4635938733455614}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightWristEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4788138704143636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4201143895796458}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLowerArmIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4396977007455198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftWristIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4978361488977810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftWrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4798831841963988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightLowerArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4416228123030304}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4242804782815412}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4543464133512268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftFootEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4724891626314712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightWrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4877607342753538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4652309511482110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4763982835534218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4396335627124296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4785023696082830}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightLowerArmIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4736084097134504}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4557573027186838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftWristEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4454250538532816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightWristFK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 195743625153195052}
   - component: {fileID: 114528558192233280}
   - component: {fileID: 114851181402688332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZomBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
