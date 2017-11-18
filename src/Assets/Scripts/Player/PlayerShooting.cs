@@ -63,6 +63,7 @@ public class PlayerShooting : MonoBehaviour
         gunAudio.Play ();
 
         gunLight.enabled = true;
+        gunLight.intensity = 100 * chargesec / maxChargeSec;
 
         gunParticles.Stop ();
         gunParticles.Play ();
