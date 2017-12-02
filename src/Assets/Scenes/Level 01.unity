@@ -819,7 +819,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4fff99673a41e24439d527ad0bd6b569, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.12
+  m_Volume: 0.116
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -875,7 +875,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -932,7 +932,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1466383862}
   enemy: {fileID: 1046815637364214, guid: 2e7f2152b37172946bb6ab546b05a53e, type: 2}
+  timeToHardest: 120
   spawnTime: 3
+  minSpawnTime: 1
+  maxSpawnTime: 3
+  maxMonsters: 30
   spawnPoints:
   - {fileID: 2042847479}
 --- !u!4 &1241017601
@@ -962,7 +966,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1466383862}
   enemy: {fileID: 153412, guid: 548c56f4bcf4db24b8aa057e9846a005, type: 2}
+  timeToHardest: 120
   spawnTime: 10
+  minSpawnTime: 1
+  maxSpawnTime: 3
+  maxMonsters: 30
   spawnPoints:
   - {fileID: 42397144}
 --- !u!114 &1241017603
@@ -978,7 +986,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1466383862}
   enemy: {fileID: 1998436063757590, guid: 8c59667965b060c4485e4a9751d27702, type: 2}
+  timeToHardest: 120
   spawnTime: 3
+  minSpawnTime: 1
+  maxSpawnTime: 3
+  maxMonsters: 30
   spawnPoints:
   - {fileID: 765965356}
 --- !u!1 &1253967141
@@ -1133,7 +1145,7 @@ Prefab:
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: damagePerShot
-      value: 100000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
@@ -1174,6 +1186,11 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.6532252
+      objectReference: {fileID: 0}
+    - target: {fileID: 82606997363989086, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d, type: 2}
