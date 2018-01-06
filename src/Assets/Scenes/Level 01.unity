@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45061493, g: 0.49860865, b: 0.56437486, a: 1}
+  m_IndirectSpecularColor: {r: 0.45061463, g: 0.4986083, b: 0.5643749, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1995727711}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1222,7 +1222,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1995727711}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1345,12 +1345,12 @@ Prefab:
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: damagePerShot
-      value: 10
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: timeBetweenBullets
-      value: 0.15
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
@@ -1406,6 +1406,7 @@ Prefab:
         type: 2}
       propertyPath: Priority
       value: 109
+      objectReference: {fileID: 0}
     - target: {fileID: 82606997363989086, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: spreadCustomCurve.m_RotationOrder
@@ -1771,7 +1772,6 @@ GameObject:
   - component: {fileID: 1995727708}
   - component: {fileID: 1995727707}
   - component: {fileID: 1995727712}
-  - component: {fileID: 1995727713}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
