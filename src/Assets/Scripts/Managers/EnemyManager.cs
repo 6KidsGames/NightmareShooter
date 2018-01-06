@@ -4,13 +4,19 @@ public class EnemyManager : MonoBehaviour
 {
     public PlayerHealth playerHealth;
     public GameObject enemy;
-    public float spawnTime = 3f;
+    public float timeToHardest = 120f;
+    public float spawnTime;
+    public float minSpawnTime = 1f;
+    public float maxSpawnTime = 3f;
+    public int maxMonsters = 30;
+    public static int numMonsters;
     public Transform[] spawnPoints;
 
 
     void Start ()
     {
-        InvokeRepeating ("Spawn", spawnTime, spawnTime);
+        spawnTime = maxSpawnTime;
+        Invoke ("Spawn", spawnTime);
     }
 
 
@@ -21,8 +27,20 @@ public class EnemyManager : MonoBehaviour
             return;
         }
 
-        int spawnPointIndex = Random.Range (0, spawnPoints.Length);
+        if (numMonsters < maxMonsters)
+        {
+            int spawnPointIndex = Random.Range(0, spawnPoints.Length);
+            Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            numMonsters++;
+        }
 
-        Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+        spawnTime = (timeToHardest - Time.fixedTime) / timeToHardest * (maxSpawnTime - minSpawnTime) + minSpawnTime;
+        spawnTime = Mathf.Max(minSpawnTime, spawnTime);
+        Invoke("Spawn", spawnTime);
+    }
+
+    public static void EnemyDied()
+    {
+        numMonsters--;
     }
 }
