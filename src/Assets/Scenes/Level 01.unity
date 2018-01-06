@@ -1345,12 +1345,12 @@ Prefab:
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: damagePerShot
-      value: 700
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}
       propertyPath: timeBetweenBullets
-      value: 0.5
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 114393750992411502, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
         type: 2}

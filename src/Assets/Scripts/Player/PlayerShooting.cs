@@ -3,6 +3,7 @@
 public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;
+    public int minDamagePerShot = 10;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
     public float maxWidth = 0.5f;
@@ -82,7 +83,7 @@ public class PlayerShooting : MonoBehaviour
             EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
             if(enemyHealth != null)
             {
-                enemyHealth.TakeDamage ((int)((float)damagePerShot * chargesec/maxChargeSec), shootHit.point);
+                enemyHealth.TakeDamage (minDamagePerShot + (int)((float)damagePerShot * chargesec/maxChargeSec), shootHit.point);
             }
             gunLine.SetPosition (1, shootHit.point);
         }
