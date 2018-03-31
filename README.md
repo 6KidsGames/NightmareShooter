@@ -57,3 +57,5 @@ We use Unity to run the build for us.
 Use Unity in play mode to run your changes.
 
 ## Useful Links
+
+* Gun selection video - using scroll wheel and number keys to change weapons: https://www.youtube.com/watch?v=Dn_BUIVdAPg
