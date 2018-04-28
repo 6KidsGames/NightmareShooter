@@ -39,7 +39,7 @@ When you want to make changes that others in your team will get to see, you need
 what's called a "topic branch," which tells Git to create a container for your changes.
 When you are done with your changes you'll use GitHub to send the changes for teacher approval. 
 
-1. To create a topic branch (container) - be sure you've run Init.cmd, and type: `cb WhatYouAreWorkingOn` where "WhatYouAreWorkingOn" is a short description of the work you are doing (without spaces). For example, it could be AddSprites or FixNetworkErrors or something else.
+1. To create a topic branch (container) - be sure you've run Init.cmd, and type: `nb WhatYouAreWorkingOn` where "WhatYouAreWorkingOn" is a short description of the work you are doing (without spaces). For example, it could be AddSprites or FixNetworkErrors or something else.
 1. Now you're ready to make changes to the code, graphics, sounds, and other parts of the system, using Unity, Visual Studio, and any other tools you might need to use to create content.
 1. When you have something done that you want to check in, use `git commit -a` and give a good description of the changes you made.
 1. When you are done with everything in your change, it is time to push your topic branch to the cloud (GitHub.com). Use `push`.
