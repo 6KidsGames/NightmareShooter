@@ -77,17 +77,15 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFilterTypeDirect: 0
-    m_PVRFilterTypeIndirect: 0
-    m_PVRFilterTypeAO: 0
+    m_PVRFiltering: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-    m_PVRFilteringAtrousPositionSigmaIndirect: 2
-    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1840,9 +1838,9 @@ MonoBehaviour:
   playerHealth: {fileID: 1466383862}
   enemy: {fileID: 1046815637364214, guid: 2e7f2152b37172946bb6ab546b05a53e, type: 2}
   timeToHardest: 120
-  spawnTime: 3
-  minSpawnTime: 1
-  maxSpawnTime: 3
+  spawnTime: 4
+  minSpawnTime: 3
+  maxSpawnTime: 5
   maxMonsters: 30
   spawnPoints:
   - {fileID: 2042847479}
@@ -1875,8 +1873,8 @@ MonoBehaviour:
   enemy: {fileID: 153412, guid: 548c56f4bcf4db24b8aa057e9846a005, type: 2}
   timeToHardest: 120
   spawnTime: 10
-  minSpawnTime: 1
-  maxSpawnTime: 3
+  minSpawnTime: 5
+  maxSpawnTime: 10
   maxMonsters: 30
   spawnPoints:
   - {fileID: 42397144}
@@ -1894,9 +1892,9 @@ MonoBehaviour:
   playerHealth: {fileID: 1466383862}
   enemy: {fileID: 1998436063757590, guid: 8c59667965b060c4485e4a9751d27702, type: 2}
   timeToHardest: 120
-  spawnTime: 3
-  minSpawnTime: 1
-  maxSpawnTime: 3
+  spawnTime: 4
+  minSpawnTime: 3
+  maxSpawnTime: 5
   maxMonsters: 30
   spawnPoints:
   - {fileID: 765965356}
@@ -2172,6 +2170,11 @@ Prefab:
       propertyPath: minDamagePerShot
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 82606997363989086, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c60fa9bec2273e642833d0e95c7195c8, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849461cb7ba6d8f4c8dcbbae8e1a6d0d, type: 2}
   m_IsPrefabParent: 0
@@ -2897,7 +2900,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042847478}
   m_LocalRotation: {x: -0, y: 0.8502319, z: -0, w: 0.5264083}
-  m_LocalPosition: {x: -20.5, y: -22.13, z: 12.5}
+  m_LocalPosition: {x: -20.9, y: 0.04, z: 13.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1241017601}
